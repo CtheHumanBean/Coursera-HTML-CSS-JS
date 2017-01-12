@@ -1,0 +1,84 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+#box {
+  position: relative;
+  height: 150px;
+  border: 1px solid black;
+  background-color: #d2ddc1;  /*light green*/
+  overflow: auto;
+  margin: 5px;
+}
+#content {
+  position: relative;
+  top: 25px;
+  left: 0px;
+  color: #black; 
+  padding: 0px 5px 5px 5px;
+}
+
+#col-head
+{
+  position: absolute; 
+  top: 0px;
+  right: 1px;
+  width: 100px;
+  height: 25px;
+  border: 1px solid black;
+  /*background-color: #c1ccdd;*/
+  text-align: right;
+  padding-right: 5px;
+ }
+
+ .col-1-head-color
+ {background-color: #ccc1dd} /*lilac*/
+
+ .col-2-head-color
+ {background-color: #b6cddb} /*light blue*/
+ 
+ .col-3-head-color
+ {background-color: #ddc1d7} /*rose*/
+
+
+/********** Small devices **********/
+/* @media (max-width: 767px)
+/* picks up .row class setting as default
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .col-lg-4 {
+    float: left;
+    border: 0px solid green;
+    width: 33.33%;
+  }
+  
+}
+
+/********** Medium devices **********/
+/* @media  (min-width: 768px) and (max-width: 991px)
+/* Use col6 and 12 to allow for 3rd column to span the whole row*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .col-md-6, .col-md-12 {
+    float: left;
+    border: 0px solid green;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
